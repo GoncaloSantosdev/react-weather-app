@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  background: linear-gradient(116.82deg, #FF9C40 0%, #526EFF 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+h1, h2{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.weather-box{
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+}
+
+.cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  background: none;
+  border: 1px solid white;
+  color:  white;
+  font-size: 1rem;
+  padding: .5rem .5rem;
+  margin: 2rem 1rem 0 1rem;
+}
+
+.btn{
+  margin-top: 1.5rem;
+  width: 10rem;
+  background: #477AA9;
+  border: none;
+  padding: .5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.image{
+  width: 100%;
+  display: flex;
+  margin-top: .8rem;
+}
+
+img{
+  margin: auto;
+}
+
+.weather-info{
+  text-align: left;
+  padding: 1.2rem;
+}
+
+.weather-info p{
+  padding: .3rem 0;
+}
+
+.bold{
+  font-weight: 600;
+  color: #075bf7;
+}
+
+@media screen and (min-width: 768px) {
+  .weather-box{
+    padding: 3rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .weather-box{
+    padding: 3rem 15rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  input{
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .weather-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    text-align: center;
+    grid-gap: 1rem;
+  }
+}
